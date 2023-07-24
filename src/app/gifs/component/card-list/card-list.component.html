@@ -1,0 +1,16 @@
+<div class="row">
+    <div *ngFor="let gif of gifsList" class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="card mb-2 text-center bg-dark">
+            <img [src]="gif.images.downsized_medium.url" [alt]="gif.title">
+                [class]="card-img-top"
+
+            <div class="card-body text-white">
+                <p class="card-text">
+                    {{gif.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
